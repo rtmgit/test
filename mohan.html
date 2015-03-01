@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<style type="text/css">
+		#mainDiv{
+			margin: 0 auto;
+			width: 100%;
+			background: rgb(159, 251, 214);
+			background-size: 100%;
+			text-align: :center;
+		}
+
+		h1 span{
+			font-size: 200%;
+			color: white;
+			
+		}
+		h1{
+			background-color: rgb(50, 139, 99);
+			text-align: center;
+		}
+		
+		#mainDiv .bx-wrapper {
+			height: 400px;
+			width: 60%;
+			margin: 40px auto;
+		}
+		#mainDiv .bx-wrapper .bxslider{
+			height: 400px;
+			width: 80%;
+			margin: 0 auto;
+			/*padding-bottom: 10px;*/
+		}
+		#mainDiv .bxslider li{
+			height: 100%;
+			width: 100%;
+		}
+		#mainDiv .bxslider li img{
+			height: 100%;
+			width: 100%;
+		}
+		.bx-wrapper .bx-controls .bx-pager-item{
+			display: none;
+		}
+
+		#mainDiv #list_of_wishing_people li img{
+			height: 100%;
+			width: 100%;
+			border-radius: 300px;
+
+		}
+		#mainDiv #list_of_wishing_people{
+			padding:0px;
+			max-width:600px;
+			margin:0 auto;
+		}
+		#mainDiv #list_of_wishing_people li{
+			height: 100px;
+			width: 100px;
+			list-style-type: none;
+			margin: 0 10px;
+			overflow: hidden;
+			display: inline-block;
+			padding: 5px 5px;
+			border-radius: 300px;
+			background-size: 100% 100%;
+		}
+		
+
+		@media screen and (max-width:320px) {
+
+			#mainDiv .bx-wrapper {
+				height: 160px;
+				width: 85%;
+				margin: 20px auto;
+			}
+			#mainDiv .bx-wrapper .bxslider{
+				height: 160px;
+				width: 100%;
+			}
+
+			#mainDiv #list_of_wishing_people{
+				max-width: 250px;
+			}
+			#mainDiv #list_of_wishing_people li {
+				height: 90px;
+				width: 90px;
+			}
+			#mainDiv #list_of_wishing_people li img{
+				height: 90px;
+				width: 90px;
+			}
+			h1{
+				height: 40px;
+				padding: 10px 2px;
+			}
+			h1 span{
+				
+				font-size: 85%;
+
+			}
+			
+		}
+	</style>
+	
+</head>
+<body>
+	<!-- <div id="container">
+			<ul class="bxslider">
+		  		<li><img src="images/mrt.jpg" /></li>
+		  		<li><img src="images/mrt1.jpg" /></li>
+		  		<li><img src="images/mrt.jpg" /></li>
+		  		<li><img src="images/mrt1.jpg" /></li>
+			</ul>
+	</div> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var slider = $('.bxslider').bxSlider({
+  				mode: 'horizontal',
+  				auto: true,
+  				pause: 2500,
+  				speed: 1500
+
+			});
+
+  		});
+	</script>
+	<div id="mainDiv">
+		<h1><span>HaPpY B'DaY MoHan</span></h1>
+		<ul class="bxslider">
+		  		<li><img src="images/mrt.jpg" /></li>
+		  		<li><img src="images/mrt1.jpg" /></li>
+		  		<li><img src="images/mrt.jpg" /></li>
+		  		<li><img src="images/mrt1.jpg" /></li>
+		</ul>
+		
+		 
+		<ul id="list_of_wishing_people">
+			<li id="id1">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id2">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id3">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id4">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id5">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id6">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id7">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id8">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id9">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id10">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id11">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id12">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id13">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id14">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id15">
+				<img src="images/raviimg.jpg">
+			</li>
+			<li id="id16">
+				<img src="images/raviimg.jpg">
+			</li>
+		</ul>
+		<audio id="audi1" src="audio/ravi.wav" type="audio/wav"></audio>
+		<audio id="audi2" src="audio/ravi1.wav" type="audio/wav"></audio>
+		<audio id="audi3" src="audio/ravi2.wav" type="audio/wav"></audio>
+		<audio id="audi4" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi5" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi6" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi7" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi8" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi9" src="audio/ravi.wav" type="audio/wav"></audio>
+		<audio id="audi10" src="audio/ravi1.wav" type="audio/wav"></audio>
+		<audio id="audi11" src="audio/ravi2.wav" type="audio/wav"></audio>
+		<audio id="audi12" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi13" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi14" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi15" src="audio/ravi3.wav" type="audio/wav"></audio>
+		<audio id="audi16" src="audio/ravi3.wav" type="audio/wav"></audio>
+
+	</div>
+
+	<script type="text/javascript">
+		playMedia(1,16)
+		
+		function playMedia(index,max){
+			document.getElementById("id"+index).style.background = "rgb(78, 221, 10)";
+			var oAudio = document.getElementById("audi"+index);
+			oAudio.play();
+			$("#audi"+index).on("ended",function(){
+				
+				document.getElementById("id"+index).style.background = "";
+				if(index == max) {
+					playMedia(1,max)
+				} else {
+					//$(document).scrollTo("#id"+index);
+					$('html, body').animate({ scrollTop: $("#id"+index).offset().top }, 'slow');
+					playMedia(index+1,max);
+				}
+			})
+			//playAudio("audi"+index);
+		}
+		
+		
+	</script>
+</body>
+</html>
