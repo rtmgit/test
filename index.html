@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>HDB MohaN</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<!-- bxSlider Javascript file -->
 	<script src="bxslider/jquery.bxslider.min.js"></script>
 	<!-- bxSlider CSS file -->
 	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
 	<style type="text/css">
+		::-webkit-scrollbar{
+			display: none;
+		}
+		body{
+			margin:0;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+
 		#mainDiv{
 			margin: 0 auto;
 			width: 100%;
-			background: rgb(159, 251, 214);
+			background: rgb(230, 236, 242);
 			background-size: 100%;
 			text-align: :center;
-		}
-
+		}		
 		h1 span{
 			font-size: 200%;
 			color: white;
 			
 		}
 		h1{
-			background-color: rgb(50, 139, 99);
+			background-color: rgb(75, 100, 153);
 			text-align: center;
+			margin:0;
 		}
-		
+		.brand{
+			min-height: 90px;
+			line-height: 90px;
+			display: block;
+		}
 		#mainDiv .bx-wrapper {
 			height: 400px;
 			width: 60%;
@@ -47,7 +60,7 @@
 			width: 100%;
 		}
 		.bx-wrapper .bx-controls .bx-pager-item{
-			display: none;
+			display: none;			
 		}
 
 		#mainDiv #list_of_wishing_people li img{
@@ -113,12 +126,11 @@
 				width: 90px;
 			}
 			h1{
-				height: 40px;
+				/*height: 40px;*/
 				padding: 10px 2px;
 			}
 			h1 span{
-				
-				font-size: 85%;
+				font-size: 100%;
 
 			}
 			#wishes{
@@ -134,7 +146,6 @@
 			}
 		}
 	</style>
-	
 </head>
 <body>
 	<!-- <div id="container">
@@ -159,7 +170,7 @@
   		});
 	</script>
 	<div id="mainDiv">
-		<h1><span>HaPpY B'DaY MoHan</span></h1>
+		<h1><span class="brand">Happy B'Day Mohan</span></h1>
 		<ul class="bxslider">
 		  		<li><img src="images/carousel1.jpg" /></li>
 		  		<li><img src="images/carousel2.jpg" /></li>
@@ -288,7 +299,7 @@
 		
 		
 		function playMedia(index,max){
-			document.getElementById("id"+index).style.background = "rgb(78, 221, 10)";
+			document.getElementById("id"+index).style.background = "rgb(67, 183, 248)";
 			var oAudio = document.getElementById("audi"+index);
 			oAudio.play();
 
