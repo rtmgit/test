@@ -292,32 +292,32 @@
 
 	</div>
 
-	<script type="text/javascript">
-		$("#wishes").on("click",function(){
-			playMedia(1,26);	
-		});
-		
-		
-		function playMedia(index,max){
-			document.getElementById("id"+index).style.background = "rgb(67, 183, 248)";
-			var oAudio = document.getElementById("audi1");
-			oAudio.play();
 
-			$("#audi"+index).on("ended",function(){
-				
-				document.getElementById("id"+index).style.background = "";
-				if(index == max) {
-					playMedia(1,max)
-				} else {
-					//$(document).scrollTo("#id"+index);
-					$('html, body').animate({ scrollTop: $("#id"+index).offset().top }, 'slow');
-					playMedia(index+1,max);
-				}
-			})
-			//playAudio("audi"+index);
-		}
-		
-		
-	</script>
+
+
+
+<script type="text/javascript">
+    var audio = document.getElementById('audi1');
+    var index = 1;
+
+    audio.addEventListener("ended", function() {
+        document.getElementById("id"+index).style.background = "";
+        $('html, body').animate({ scrollTop: $("#id"+index).offset().top }, 'slow');
+
+        index = (index + 1) % 25;
+        playMedia();
+    });
+
+    $("#wishes").on("click",function(){
+        playMedia();
+    });
+    
+    function playMedia(){
+        document.getElementById("id"+index).style.background = "rgb(67, 183, 248)";
+        audio.src = "audio/" + index + ".wav";
+        audio.play();
+    }
+</script>
+
 </body>
 </html>
