@@ -6,8 +6,10 @@
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<!-- bxSlider Javascript file -->
 	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<script  type="text/javascript" src="js/wow.js"></script>
 	<!-- bxSlider CSS file -->
 	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link href="css/animate.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		::-webkit-scrollbar{
@@ -177,82 +179,82 @@
 		
 		<button id="wishes">Idi Matram nokkaku ra Annayya ;)</button> 
 		<ul id="list_of_wishing_people">
-			<li id="id1">
+			<li id="id1" class="wow bounceInUp">
 				<img src="images/1.jpg">
 			</li>
-			<li id="id2">
+			<li id="id2" class="wow bounceInUp">
 				<img src="images/2.jpg">
 			</li>
-			<li id="id3">
+			<li id="id3" class="wow bounceInUp">
 				<img src="images/3.jpg">
 			</li>
-			<li id="id4">
+			<li id="id4" class="wow bounceInUp">
 				<img src="images/4.jpg">
 			</li>
-			<li id="id5">
+			<li id="id5" class="wow bounceInUp">
 				<img src="images/5.jpg">
 			</li>
-			<li id="id6">
+			<li id="id6" class="wow bounceInUp">
 				<img src="images/6.jpg">
 			</li>
-			<li id="id7">
+			<li id="id7" class="wow bounceInUp">
 				<img src="images/7.jpg">
 			</li>
-			<li id="id8">
+			<li id="id8" class="wow bounceInUp">
 				<img src="images/8.jpg">
 			</li>
-			<li id="id9">
+			<li id="id9" class="wow bounceInUp">
 				<img src="images/9.jpg">
 			</li>
-			<li id="id10">
+			<li id="id10" class="wow bounceInUp">
 				<img src="images/10.jpg">
 			</li>
-			<li id="id11">
+			<li id="id11" class="wow bounceInUp">
 				<img src="images/11.jpg">
 			</li>
-			<li id="id12">
+			<li id="id12" class="wow bounceInUp">
 				<img src="images/12.jpg">
 			</li>
-			<li id="id13">
+			<li id="id13" class="wow bounceInUp">
 				<img src="images/13.jpg">
 			</li>
-			<li id="id14">
+			<li id="id14" class="wow bounceInUp">
 				<img src="images/14.jpg">
 			</li>
-			<li id="id15">
+			<li id="id15" class="wow bounceInUp">
 				<img src="images/15.jpg">
 			</li>
-			<li id="id16">
+			<li id="id16" class="wow bounceInUp">
 				<img src="images/16.jpg">
 			</li>
-			<li id="id17">
+			<li id="id17" class="wow bounceInUp">
 				<img src="images/17.jpg">
 			</li>
-			<li id="id18">
+			<li id="id18" class="wow bounceInUp">
 				<img src="images/18.jpg">
 			</li>
-			<li id="id19">
+			<li id="id19"  class="wow bounceInUp">
 				<img src="images/19.jpg">
 			</li>
-			<li id="id20">
+			<li id="id20" class="wow bounceInUp">
 				<img src="images/20.jpg">
 			</li>
-			<li id="id21">
+			<li id="id21" class="wow bounceInUp">
 				<img src="images/21.jpg">
 			</li>
-			<li id="id22">
+			<li id="id22" class="wow bounceInUp">
 				<img src="images/22.jpg">
 			</li>
-			<li id="id23">
+			<li id="id23" class="wow bounceInUp">
 				<img src="images/23.jpg">
 			</li>
-			<li id="id24">
+			<li id="id24" class="wow bounceInUp">
 				<img src="images/24.jpg">
 			</li>
-			<li id="id25">
+			<li id="id25" class="wow bounceInUp">
 				<img src="images/25.jpg">
 			</li>
-			<li id="id26">
+			<li id="id26" class="wow bounceInUp">
 				<img src="images/26.jpg">
 			</li>
 		</ul>
@@ -260,7 +262,18 @@
 		
 	</div>
 
-
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+</script>
 
 
 
