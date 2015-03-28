@@ -1,149 +1,101 @@
 ::-webkit-scrollbar{
-			display: none;
-		}
-		body{
-			margin:0;
-			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		}
+	display: none;
+}
+#mainDiv .bx-wrapper {
+	height: 400px;
+	width: 60%;
+	margin: 40px auto;
+}
+#mainDiv .bx-wrapper .bxslider{
+	height: 400px;
+	width: 80%;
+	margin: 0 auto;
+	/*padding-bottom: 10px;*/
+}
+#mainDiv .bxslider li{
+	height: 100%;
+	width: 100%;
+}
+#mainDiv .bxslider li img{
+	height: 100%;
+	width: 100%;
+}
+.bx-wrapper .bx-controls .bx-pager-item{
+	display: none;			
+}
 
-		#mainDiv{
-			margin: 0 auto;
-			width: 100%;
-			background: rgb(230, 236, 242);
-			background-size: 100%;
-			text-align: :center;
-		}		
-		#mainDiv h1 span{
-			font-size: 200%;
-			color: white;
-			
-		}
-		#mainDiv h1{
-			background-color: rgb(75, 100, 153);
-			text-align: center;
-			margin:0;
-		}
-		.brand{
-			min-height: 90px;
-			line-height: 90px;
-			display: block;
-		}
-		#mainDiv .bx-wrapper {
-			height: 400px;
-			width: 60%;
-			margin: 40px auto;
-		}
-		#mainDiv .bx-wrapper .bxslider{
-			height: 400px;
-			width: 80%;
-			margin: 0 auto;
-			/*padding-bottom: 10px;*/
-		}
-		#mainDiv .bxslider li{
-			height: 100%;
-			width: 100%;
-		}
-		#mainDiv .bxslider li img{
-			height: 100%;
-			width: 100%;
-		}
-		.bx-wrapper .bx-controls .bx-pager-item{
-			display: none;			
-		}
+#mainDiv #list_of_wishing_people li img{
+	height: 100%;
+	width: 100%;
+	border-radius: 300px;
 
-		#mainDiv #list_of_wishing_people li img{
-			height: 100%;
-			width: 100%;
-			border-radius: 300px;
+}
+#mainDiv #list_of_wishing_people{
+	padding:0px;
+	max-width:600px;
+	margin:0 auto;
+}
+#mainDiv #list_of_wishing_people li{
+	height: 100px;
+	width: 100px;
+	list-style-type: none;
+	margin: 0 10px;
+	overflow: hidden;
+	display: inline-block;
+	padding: 5px 5px;
+	border-radius: 300px;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+#wishes{
+		margin: 2px auto;
+		/*margin-left: 28%;*/
+		display: block;
+		height: 50px;
+		border: 1px solid white;
+		cursor: pointer;
+		width: 50%;
 
-		}
-		#mainDiv #list_of_wishing_people{
-			padding:0px;
-			max-width:600px;
-			margin:0 auto;
-		}
-		#mainDiv #list_of_wishing_people li{
-			height: 100px;
-			width: 100px;
-			list-style-type: none;
-			margin: 0 10px;
-			overflow: hidden;
-			display: inline-block;
-			padding: 5px 5px;
-			border-radius: 300px;
-			background-size: 100% 100%;
-			cursor: pointer;
-		}
-		#wishes{
-				margin: 2px auto;
-				/*margin-left: 28%;*/
-				display: block;
-				height: 50px;
-				border: 1px solid white;
-				cursor: pointer;
-				width: 50%;
+		border-radius: 17px;
+		font-size: 20px;
+		font-family: cursive;
+		color: white;
+		background: linear-gradient(rgb(67, 183, 248),rgb(63, 73, 148));
+}
 
-				border-radius: 17px;
-				font-size: 20px;
-				font-family: cursive;
-				color: white;
-				background: linear-gradient(rgb(67, 183, 248),rgb(63, 73, 148));
-		}
-		#mainDiv .footer{
-				font-size: 70%;
-				color: white;
-				background-color: rgb(75, 100, 153);
-				text-align: center;
-				min-height: 40px;
-				line-height: 40px;
-				display: block;
-		}
-		
+@media screen and (max-width:520px) {
 
-		@media screen and (max-width:520px) {
+	#mainDiv .bx-wrapper {
+		height: 160px;
+		width: 85%;
+		margin: 20px auto;
+	}
+	#mainDiv .bx-wrapper .bxslider{
+		height: 160px;
+		width: 100%;
+	}
 
-			#mainDiv .bx-wrapper {
-				height: 160px;
-				width: 85%;
-				margin: 20px auto;
-			}
-			#mainDiv .bx-wrapper .bxslider{
-				height: 160px;
-				width: 100%;
-			}
-
-			#mainDiv #list_of_wishing_people{
-				max-width: 250px;
-			}
-			#mainDiv #list_of_wishing_people li {
-				height: 90px;
-				width: 90px;
-			}
-			#mainDiv #list_of_wishing_people li img{
-				height: 90px;
-				width: 90px;
-			}
-			h1{
-				/*height: 40px;*/
-				padding: 10px 2px;
-			}
-			h1 span{
-				font-size: 80%;
-
-			}
-			#wishes{
-				/*margin: 10px 0px;*/
-				/*margin-left: 7%;*/
-				display: block;
-				height: 50px;
-				border: 1px solid white;
-				cursor: pointer;
-				/*width: 250px;*/
-				width: 90%;
-				border-radius: 17px;
-				font-size: 13px;
-			}
-			#mainDiv span{
-				font-size: 40%;
-			}
-		}
+	#mainDiv #list_of_wishing_people{
+		max-width: 250px;
+	}
+	#mainDiv #list_of_wishing_people li {
+		height: 90px;
+		width: 90px;
+	}
+	#mainDiv #list_of_wishing_people li img{
+		height: 90px;
+		width: 90px;
+	}
+	#wishes{
+		/*margin: 10px 0px;*/
+		/*margin-left: 7%;*/
+		display: block;
+		height: 50px;
+		border: 1px solid white;
+		cursor: pointer;
+		/*width: 250px;*/
+		width: 90%;
+		border-radius: 17px;
+		font-size: 16px;
+	}
+}
