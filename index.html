@@ -10,165 +10,16 @@
 	<!-- bxSlider CSS file -->
 	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
 	<link href="css/animate.css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-	<style type="text/css">
-		::-webkit-scrollbar{
-			display: none;
-		}
-		body{
-			margin:0;
-			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		}
-
-		#mainDiv{
-			margin: 0 auto;
-			width: 100%;
-			background: rgb(230, 236, 242);
-			background-size: 100%;
-			text-align: :center;
-		}		
-		h1 span{
-			font-size: 200%;
-			color: white;
-			
-		}
-		h1{
-			background-color: rgb(75, 100, 153);
-			text-align: center;
-			margin:0;
-		}
-		.brand{
-			min-height: 90px;
-			line-height: 90px;
-			display: block;
-		}
-		#mainDiv .bx-wrapper {
-			height: 400px;
-			width: 60%;
-			margin: 40px auto;
-		}
-		#mainDiv .bx-wrapper .bxslider{
-			height: 400px;
-			width: 80%;
-			margin: 0 auto;
-			/*padding-bottom: 10px;*/
-		}
-		#mainDiv .bxslider li{
-			height: 100%;
-			width: 100%;
-		}
-		#mainDiv .bxslider li img{
-			height: 100%;
-			width: 100%;
-		}
-		.bx-wrapper .bx-controls .bx-pager-item{
-			display: none;			
-		}
-
-		#mainDiv #list_of_wishing_people li img{
-			height: 100%;
-			width: 100%;
-			border-radius: 300px;
-
-		}
-		#mainDiv #list_of_wishing_people{
-			padding:0px;
-			max-width:600px;
-			margin:0 auto;
-		}
-		#mainDiv #list_of_wishing_people li{
-			height: 100px;
-			width: 100px;
-			list-style-type: none;
-			margin: 0 10px;
-			overflow: hidden;
-			display: inline-block;
-			padding: 5px 5px;
-			border-radius: 300px;
-			background-size: 100% 100%;
-		}
-		#wishes{
-				margin: 2px auto;
-				/*margin-left: 28%;*/
-				display: block;
-				height: 50px;
-				border: 1px solid white;
-				cursor: pointer;
-				width: 50%;
-
-				border-radius: 17px;
-				font-size: 20px;
-				font-family: cursive;
-				color: white;
-				background: linear-gradient(rgb(67, 183, 248),rgb(63, 73, 148));
-			}
-
-		
-
-		@media screen and (max-width:520px) {
-
-			#mainDiv .bx-wrapper {
-				height: 160px;
-				width: 85%;
-				margin: 20px auto;
-			}
-			#mainDiv .bx-wrapper .bxslider{
-				height: 160px;
-				width: 100%;
-			}
-
-			#mainDiv #list_of_wishing_people{
-				max-width: 250px;
-			}
-			#mainDiv #list_of_wishing_people li {
-				height: 90px;
-				width: 90px;
-			}
-			#mainDiv #list_of_wishing_people li img{
-				height: 90px;
-				width: 90px;
-			}
-			h1{
-				/*height: 40px;*/
-				padding: 10px 2px;
-			}
-			h1 span{
-				font-size: 100%;
-
-			}
-			#wishes{
-				/*margin: 10px 0px;*/
-				/*margin-left: 7%;*/
-				display: block;
-				height: 50px;
-				border: 1px solid white;
-				cursor: pointer;
-				/*width: 250px;*/
-				width: 90%;
-				border-radius: 17px;
-				font-size: 13px;
-			}
-		}
-
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/indexpage.css" />
 </head>
 <body>
 	
-	<script type="text/javascript">
-		$(document).ready(function(){
-
-			var slider = $('.bxslider').bxSlider({
-  				mode: 'horizontal',
-  				auto: true,
-  				pause: 2500,
-  				speed: 1500
-
-			});
-
-  		});
+	<script type="text/javascript" src="js/carousel.js">
 	</script>
+	
 	<div id="mainDiv">
-		<h1><span class="brand">Happy B'Day Mohan</span></h1>
+		<h1><span class="brand">Happy B'DaY Mohan</span></h1>
 		<ul class="bxslider">
 		  		<li><img src="images/carousel1.jpg" /></li>
 		  		<li><img src="images/carousel2.jpg" /></li>
@@ -182,126 +33,91 @@
 		
 		<button id="wishes">Idi Matram nokkaku ra Annayya</button> 
 		<ul id="list_of_wishing_people">
-			<li id="id1" class="wow bounceInUp">
+			<li id="id1" class="wow bounceInUp"  onclick="playSpecificMedia(0)">
 				<img src="images/1.jpg">
 			</li>
-			<li id="id2" class="wow bounceInUp">
+			<li id="id2" class="wow bounceInUp" onclick="playSpecificMedia(1)">
 				<img src="images/2.jpg">
 			</li>
-			<li id="id3" class="wow bounceInUp">
+			<li id="id3" class="wow bounceInUp" onclick="playSpecificMedia(2)">
 				<img src="images/3.jpg">
 			</li>
-			<li id="id4" class="wow bounceInUp">
+			<li id="id4" class="wow bounceInUp" onclick="playSpecificMedia(3)">
 				<img src="images/4.jpg">
 			</li>
-			<li id="id5" class="wow bounceInUp">
+			<li id="id5" class="wow bounceInUp" onclick="playSpecificMedia(4)">
 				<img src="images/5.jpg">
 			</li>
-			<li id="id6" class="wow bounceInUp">
+			<li id="id6" class="wow bounceInUp" onclick="playSpecificMedia(5)">
 				<img src="images/6.jpg">
 			</li>
-			<li id="id7" class="wow bounceInUp">
+			<li id="id7" class="wow bounceInUp" onclick="playSpecificMedia(6)">
 				<img src="images/7.jpg">
 			</li>
-			<li id="id8" class="wow bounceInUp">
+			<li id="id8" class="wow bounceInUp" onclick="playSpecificMedia(7)">
 				<img src="images/8.jpg">
 			</li>
-			<li id="id9" class="wow bounceInUp">
+			<li id="id9" class="wow bounceInUp" onclick="playSpecificMedia(8)">
 				<img src="images/9.jpg">
 			</li>
-			<li id="id10" class="wow bounceInUp">
+			<li id="id10" class="wow bounceInUp" onclick="playSpecificMedia(9)">
 				<img src="images/10.jpg">
 			</li>
-			<li id="id11" class="wow bounceInUp">
+			<li id="id11" class="wow bounceInUp" onclick="playSpecificMedia(10)">
 				<img src="images/11.jpg">
 			</li>
-			<li id="id12" class="wow bounceInUp">
+			<li id="id12" class="wow bounceInUp" onclick="playSpecificMedia(11)">
 				<img src="images/12.jpg">
 			</li>
-			<li id="id13" class="wow bounceInUp">
+			<li id="id13" class="wow bounceInUp" onclick="playSpecificMedia(12)">
 				<img src="images/13.jpg">
 			</li>
-			<li id="id14" class="wow bounceInUp">
+			<li id="id14" class="wow bounceInUp" onclick="playSpecificMedia(13)">
 				<img src="images/14.jpg">
 			</li>
-			<li id="id15" class="wow bounceInUp">
+			<li id="id15" class="wow bounceInUp" onclick="playSpecificMedia(14)">
 				<img src="images/15.jpg">
 			</li>
-			<li id="id16" class="wow bounceInUp">
+			<li id="id16" class="wow bounceInUp" onclick="playSpecificMedia(15)">
 				<img src="images/16.jpg">
 			</li>
-			<li id="id17" class="wow bounceInUp">
+			<li id="id17" class="wow bounceInUp" onclick="playSpecificMedia(16)">
 				<img src="images/17.jpg">
 			</li>
-			<li id="id18" class="wow bounceInUp">
+			<li id="id18" class="wow bounceInUp" onclick="playSpecificMedia(17)">
 				<img src="images/18.jpg">
 			</li>
-			<li id="id19"  class="wow bounceInUp">
+			<li id="id19"  class="wow bounceInUp" onclick="playSpecificMedia(18)">
 				<img src="images/19.jpg">
 			</li>
-			<li id="id20" class="wow bounceInUp">
+			<li id="id20" class="wow bounceInUp" onclick="playSpecificMedia(19)">
 				<img src="images/20.jpg">
 			</li>
-			<li id="id21" class="wow bounceInUp">
+			<li id="id21" class="wow bounceInUp" onclick="playSpecificMedia(20)">
 				<img src="images/21.jpg">
 			</li>
-			<li id="id22" class="wow bounceInUp">
+			<li id="id22" class="wow bounceInUp" onclick="playSpecificMedia(21)">
 				<img src="images/22.jpg">
 			</li>
-			<li id="id23" class="wow bounceInUp">
+			<li id="id23" class="wow bounceInUp" onclick="playSpecificMedia(22)">
 				<img src="images/23.jpg">
 			</li>
-			<li id="id24" class="wow bounceInUp">
+			<li id="id24" class="wow bounceInUp" onclick="playSpecificMedia(23)">
 				<img src="images/24.jpg">
 			</li>
-			<li id="id25" class="wow bounceInUp">
+			<li id="id25" class="wow bounceInUp" onclick="playSpecificMedia(24)">
 				<img src="images/25.jpg">
 			</li>
-			<li id="id26" class="wow bounceInUp">
+			<li id="id26" class="wow bounceInUp" onclick="playSpecificMedia(25)">
 				<img src="images/26.jpg">
 			</li>
 		</ul>
-		<audio id="audio" src="audio/1.wav" type="audio/wav"></audio>
-		
+		<audio id="audio" src="audio/1.wav" type="audio/wav"></audio>	
+		<span class="footer">Copyright©2015-2021 BDaywish, Inc. BDaywish are registered trademarks, Inc.</span>	
 	</div>
-
-<script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-</script>
-
-
-
-<script type="text/javascript">
-    var audio = document.getElementById('audio');
-    var index = 1;
-
-    audio.addEventListener("ended", function() {
-        document.getElementById("id"+index).style.background = "";
-        
-        index = (index + 1) % 25;
-        $('html, body').animate({ scrollTop: $("#id"+index).offset().top }, 'slow');
-        playMedia();
-    });
-
-    $("#wishes").on("click",function(){
-        playMedia();
-    });
-    
-    function playMedia(){
-        document.getElementById("id"+index).style.background = "rgb(67, 183, 248)";
-        audio.src = "audio/" + index + ".wav";
-        audio.play();
-    }
-</script>
-
+	<script type="text/javascript" src="js/wowInitialization.js">
+	</script>
+	<script type="text/javascript" src="js/navigateElements.js">
+	</script>
 </body>
 </html>
